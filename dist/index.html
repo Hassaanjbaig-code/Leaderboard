@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><link href="index.css" rel="stylesheet"></head>
+  <body>
+    <h1>LeaderBoard</h1>
+    <main>
+      <section class="review">
+        <div class="reviewtop">
+          <h2>Recent score</h2>
+          <input type="submit" id="Refresh" class="refresh" value="Refresh" />
+        </div>
+        <div class="score" id="score"></div>
+      </section>
+      <section class="input">
+        <form class="form" id="addNewBook">
+          <h2>Add a Score</h2>
+          <input
+            type="number"
+            name="Title"
+            placeholder="Title"
+            id="Title"
+            required
+          />
+          <input
+            type="text"
+            name="Author"
+            placeholder="Author"
+            id="Author"
+            required
+          />
+          <input type="button" value="Submit" id="button" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

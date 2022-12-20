@@ -1,0 +1,45 @@
+h1 {
+  font-size: 5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form h2 {
+  font-size: 2rem;
+}
+
+input {
+  font-size: 1.2rem;
+}
+
+#button {
+  width: 5rem;
+  display: flex;
+  align-self: flex-end;
+}
+
+.reviewtop {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.refresh {
+  height: 2rem;
+}
+
+.score {
+  width: 27rem;
+  height: 22rem;
+  border: 9px solid black;
+}
