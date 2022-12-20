@@ -7,7 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Leaderboard</h1>
-    <legend>Hello</legend>
+    <main>
+    <h1>LeaderBoard</h1>
+    <section class="input">
+        <hr />
+        <form class="form" id="addNewBook">
+          <h2>Add a Score</h2>
+          <input type="text" name="Title" placeholder="Title" id="Title" required/>
+          <input type="text" name="Author" placeholder="Author" id="Author" required/>
+          <input type="button" value="Submit" id="button" />
+        </form>
+      </section>
+      <section class="review">
+      <h2>Recent score</h2> <input type="submit" value="Refresh">
+      <div class="score" id="score">
+
+      </div>
+    </section>
+</main>
 </body>
 </html>

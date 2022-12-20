@@ -1,0 +1,15 @@
+h1 {
+  font-size: large;
+}
+
+main {
+  width: 70%;
+}
+
+.input {
+  float: right;
+}
+
+.review {
+  float: left;
+}
