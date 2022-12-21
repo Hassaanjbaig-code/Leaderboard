@@ -17,7 +17,8 @@ const getdata = async () => {
             score: score.value,
           }),
     })
-    const get = await respone.JSON()
+    const get = await respone.JSON();
+    return get
 }
 
 export default getdata()
