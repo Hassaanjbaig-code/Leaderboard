@@ -38,7 +38,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link](https://trast00.github.io/leaderboard-score/dist/index.html)
+[Live Demo Link](https://hassaanjbaig-code.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
