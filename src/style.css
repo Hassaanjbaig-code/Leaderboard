@@ -73,3 +73,7 @@ p {
 .right {
   font-size: 1.3rem;
 }
+
+.nodata {
+  color: red;
+}
