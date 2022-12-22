@@ -42,4 +42,18 @@ input {
   width: 27rem;
   height: 22rem;
   border: 9px solid black;
+  overflow: scroll;
+}
+
+p {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  font-size: 2rem;
+}
+
+.right {
+  font-size: 1.3rem;
 }

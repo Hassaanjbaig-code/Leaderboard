@@ -38,7 +38,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link](https://trast00.github.io/leaderboard-score/dist/index.html)
+[Live Demo Link](https://hassaanjbaig-code.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,11 +71,18 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Dicko Allasane**
+👤 **Hassaan Baig**
 
 - GitHub: [@githubhandle](https://github.com/Hassaanjbaig-code)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
-- 
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Add a animation**
+- [ ] **Add a more style**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## ⭐️ Show your support <a name="support"></a>
 
