@@ -13,7 +13,6 @@ const postdata = async (url, data) => {
     }
     return get;
   } catch (error) {
-    console.log(error);
     return error;
   }
 };
