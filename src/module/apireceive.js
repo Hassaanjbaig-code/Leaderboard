@@ -1,16 +1,25 @@
 /* eslint-disable */
+// {
+//     "result": "Game with ID: YxqQ1a8VJ6UXsMwlOqrv added."
+//   }
 
 const gameId = 'j8HGYB2wqKAEI3hfuECt'
-const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`;
+const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/j8HGYB2wqKAEI3hfuECt/score`;
 
-const recive = async () => {
+const getdata = async () =>{
     try {
-        const response = await fetch(url);
-         const data = await response.json();
-         console.log(data);
-       } catch(error) {
-          console.log(error)
-         } 
-    }
+        const respone = await fetch(url);
+        if (!respone.ok) {
+            throw Error(respone.statusText)
+        }
+        const data = await respone.json();
+        console.log(data);
+        return data.result;
 
-export default recive
+    } catch (error) {
+        console.log(error);
+        return error
+    }
+}
+
+export default getdata

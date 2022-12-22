@@ -1,14 +1,27 @@
 /* eslint-disable */
-import { json } from 'body-parser';
 import './style.css';
-import getdata from './module/apisend';
 
-const name = document.getElementById('Name');
-const score = document.getElementById('Score');
+import  getdata  from './module/apireceive';
+import  postdata  from './module/apisend';
+const Show = document.getElementById('show');
+const Refresh = document.getElementById('Refresh');
 const submit = document.getElementById('button');
+const Name = document.getElementById('Name');
+const Score = document.getElementById('Score');
+
+
+Refresh.addEventListener('click', async () =>{
+    const data = await getdata()
+    data.forEach(element => {
+        Show.innerHTML += `
+        <p class="para"> <span class="left"> ${element.name} </span> <span class="right"> ${element.score} </span></p>
+        `
+    });
+} )
 
 submit.addEventListener('click', () => {
-    getdata();
-    name.value = '';
-    score.value = '';
+    console.log("worki")
+    postdata();
+    Name.value = '';
+    Score.value = '';
 })
