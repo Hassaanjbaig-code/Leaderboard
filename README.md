@@ -71,11 +71,18 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Dicko Allasane**
+👤 **Hassaan Baig**
 
 - GitHub: [@githubhandle](https://github.com/Hassaanjbaig-code)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
-- 
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Add a animation**
+- [ ] **Add a more style**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## ⭐️ Show your support <a name="support"></a>
 
