@@ -5,11 +5,11 @@
   100% { opacity: 1; }
 }
 
-/* @keyframes slide {
+@keyframes slide {
   0% { left: 0; }
   50% { left: 50%; }
   100% { left: 100%; }
-} */
+}
 
 h1 {
   font-size: 5rem;
