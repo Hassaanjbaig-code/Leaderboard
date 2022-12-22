@@ -3,25 +3,40 @@ import './style.css';
 
 import  getdata  from './module/apireceive';
 import  postdata  from './module/apisend';
-const Show = document.getElementById('show');
-const Refresh = document.getElementById('Refresh');
+const show = document.getElementById('show');
+const refresh = document.getElementById('Refresh');
 const submit = document.getElementById('button');
-const Name = document.getElementById('Name');
-const Score = document.getElementById('Score');
+const name = document.getElementById('Name');
+const score = document.getElementById('Score');
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/NlvX6MvUBPuR3j2CIhZm/scores/';
 
 
-Refresh.addEventListener('click', async () =>{
-    const data = await getdata()
-    data.forEach(element => {
-        Show.innerHTML += `
-        <p class="para"> <span class="left"> ${element.name} </span> <span class="right"> ${element.score} </span></p>
-        `
-    });
+const display = (data) => {
+    show.innerHTML = '';
+    if(data.length> 0) {
+        data.forEach(element => {
+            show.innerHTML += `
+            <p class="para"> <span class="left"> ${element.user} </span> <span class="right"> ${element.score} </span></p>
+            `
+        });
+    } else {
+        show.innerHTML = `<p class="nodata">There is no data to show! Please add a data</p>`;
+    }
+}
+
+
+refresh.addEventListener('click', async () =>{
+    const data = await getdata(url)
+    display(data)
 } )
 
 submit.addEventListener('click', () => {
-    console.log("worki")
-    postdata();
-    Name.value = '';
-    Score.value = '';
+    postdata(url,{user: name.value, score: score.value});
+    name.value = '';
+    score.value = '';
 })
+
+window.onload = async() => {
+    const data = await getdata(url);
+    display(data)
+}
